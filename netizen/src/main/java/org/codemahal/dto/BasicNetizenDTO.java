@@ -1,5 +1,4 @@
 package org.codemahal.dto;
-
 import java.net.URI;
 import java.util.List;
 
@@ -9,7 +8,10 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.HttpRequestBase;
 import org.codemahal.netizen.common.ReadUtils;
 import org.jsoup.Jsoup;
-
+/*
+ * The basic DTO that holds some info 
+ * 
+*/
 public class BasicNetizenDTO {
 
 	private URI uri;
