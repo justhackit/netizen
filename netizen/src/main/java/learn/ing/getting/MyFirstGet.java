@@ -20,7 +20,7 @@ public class MyFirstGet {
 	
 	public MyFirstGet(String url) throws ClientProtocolException, IOException, URISyntaxException{
 		target = new URI(url);
-		LOG.info("Received Target -> "+target);
+		LOG.info("Received Target -> "+target) ;
 		long startedAt = System.currentTimeMillis();
 		HttpResponse resp = GetPostUtils.getPage(target);
 		LOG.info("Time Taken: "+(System.currentTimeMillis() - startedAt));
