@@ -22,7 +22,7 @@ public class BasicNetizenDTO {
 	private String respStatusLine;
 	private String contentWeight;
 	private Header[] responseHeaders;
-	private StringBuilder theContent;
+	private String theContent;
 
 	public URI getUri() {
 		return uri;
@@ -94,13 +94,14 @@ public class BasicNetizenDTO {
 		return responseHeaders;
 	}
 
-	public StringBuilder getTheContent() {
+	public String getTheContent() {
 		return theContent;
 	}
 
-	public void setTheContent(StringBuilder theContent) {
+	public void setTheContent(String theContent) {
 		this.theContent = theContent;
 	}
+	
 
 	public String toString() {
 		StringBuilder theString = new StringBuilder();
@@ -132,5 +133,6 @@ public class BasicNetizenDTO {
 				+ this.theContent.substring(this.theContent.length() - 100)+"\n");
 		return theString.toString();
 	}
+
 
 }

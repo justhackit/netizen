@@ -14,6 +14,7 @@ import org.apache.http.client.utils.URIBuilder;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.codemahal.dto.BasicNetizenDTO;
+import org.codemahal.netizen.churner.jsoupimpl.ChurnItByJsoup;
 import org.codemahal.netizen.common.GetPostUtils;
 import org.codemahal.netizen.common.ReadUtils;
 
@@ -35,14 +36,17 @@ public class HitIt {
 		Logger.getLogger("httpclient.wire.header").setLevel(Level.DEBUG);
 		BasicNetizenDTO dto = new BasicNetizenDTO();
 		URIBuilder uriBuilder = null;
-		uriBuilder = new URIBuilder("https://www.facebook.com/login.php?login_attempt=1");
-		uriBuilder.setParameter("email", "ajay.edap@gmail.com");
-		uriBuilder.setParameter("pass","constraint02");
+		uriBuilder = new URIBuilder("http://www.redbus.in");
+		//uriBuilder.setParameter("email", "ajay.edap@gmail.com");
+		//uriBuilder.setParameter("pass","constraint02");
 		dto.setUri(uriBuilder.build());
 		dto.setRequest(new HttpGet());
 		HitIt hit = new HitIt();
 		hit.knockKnock(dto);
 		System.out.println(dto);
+		System.out.println("---------------------");
+		ChurnItByJsoup churn = new ChurnItByJsoup();
+		churn.getTag(dto.getTheContent(), "");
 		
 	}
 }

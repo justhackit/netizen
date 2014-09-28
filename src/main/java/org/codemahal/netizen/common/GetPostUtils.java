@@ -51,38 +51,38 @@ public class GetPostUtils {
 	/*
 	 * This method directly returns the content of the GET URI.
 	 */
-	public static StringBuilder getContentAsText(URI uri) throws ClientProtocolException, IOException{
+	public static String getContentAsText(URI uri) throws ClientProtocolException, IOException{
 		HttpResponse resp = getPage(uri);
 		HttpEntity entities = resp.getEntity();
 		LOG.debug("Response content Length#"+ReadUtils.bytesToHigher(entities.getContentLength()));
 		InputStream in = entities.getContent();
-		StringBuilder theContent = ReadUtils.getContentAsText(in);
+		String theContent = ReadUtils.getContentAsText(in);
 		return theContent;
 	}
 	
 	/*
 	 * This method directly returns the content of the POST URI.
 	 */
-	public static StringBuilder getContentAsText(URI uri,UrlEncodedFormEntity entity) throws ClientProtocolException, IOException{
+	public static String getContentAsText(URI uri,UrlEncodedFormEntity entity) throws ClientProtocolException, IOException{
 		HttpResponse resp = getPage(uri, entity);
 		HttpEntity entities = resp.getEntity();
 		LOG.debug("Response content Length#"+ReadUtils.bytesToHigher(entities.getContentLength()));
 		InputStream in = entities.getContent();
-		StringBuilder theContent = ReadUtils.getContentAsText(in);
+		String theContent = ReadUtils.getContentAsText(in);
 		return theContent;
 	}
 	
 	/*
 	 * This method directly returns the content of the GET URL string.
 	 */
-	public static StringBuilder getContentAsText(String uri) throws ClientProtocolException, IOException, URISyntaxException{
+	public static String getContentAsText(String uri) throws ClientProtocolException, IOException, URISyntaxException{
 		return getContentAsText(new URI(uri));
 	}
 	
 	/*
 	 * This method directly returns the content of the POST URL string.
 	 */
-	public static StringBuilder getContentAsText(String uri,UrlEncodedFormEntity entity) throws ClientProtocolException, IOException, URISyntaxException{
+	public static String getContentAsText(String uri,UrlEncodedFormEntity entity) throws ClientProtocolException, IOException, URISyntaxException{
 		return getContentAsText(new URI(uri),entity);
 	}
 

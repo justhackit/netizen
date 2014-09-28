@@ -24,7 +24,7 @@ public class MyFirstGet {
 		long startedAt = System.currentTimeMillis();
 		HttpResponse resp = GetPostUtils.getPage(target);
 		LOG.info("Time Taken: "+(System.currentTimeMillis() - startedAt));
-		StringBuilder content = ReadUtils.getContentAsText(resp.getEntity().getContent());
+		String content = ReadUtils.getContentAsText(resp.getEntity().getContent());
 		
 	}
 	
@@ -37,7 +37,7 @@ public class MyFirstGet {
 		}
 		else mfg = new MyFirstGet(args[0]);
 */	
-		StringBuilder content = GetPostUtils.getContentAsText("http://175.41.130.244:80/");
+		String content = GetPostUtils.getContentAsText("http://175.41.130.244:80/");
 		System.out.println(content);
 		System.out.println("Content length:"+content.length());
 		}

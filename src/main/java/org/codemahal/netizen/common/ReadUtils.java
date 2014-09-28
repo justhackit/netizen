@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
 public class ReadUtils {
 	static Logger LOG = Logger.getLogger(ReadUtils.class);
 	
-	public static StringBuilder getContentAsText(InputStream in) throws IOException{
+	public static String getContentAsText(InputStream in) throws IOException{
 		LOG.info("Extracting the content from stream...");
 		InputStreamReader inReader = new InputStreamReader(in);
 		BufferedReader stream = new BufferedReader(inReader);
@@ -21,7 +21,7 @@ public class ReadUtils {
 			theContent.append(aLine+"\n");
 		}
 		in.close();
-		return theContent;
+		return theContent.toString();
 	}
 	public static String bytesToHigher(long bytes){
 		String toRet="Unkown";
