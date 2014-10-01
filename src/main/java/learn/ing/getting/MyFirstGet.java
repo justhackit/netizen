@@ -31,12 +31,6 @@ public class MyFirstGet {
 	public static void main(String[] args) throws URISyntaxException, ClientProtocolException, IOException {
 		BasicConfigurator.configure();
 		LOG.getRootLogger().setLevel(Level.INFO);
-/*		MyFirstGet mfg = null;
-		if(args.length==0){
-			mfg = new MyFirstGet("http://www.redbus.in");
-		}
-		else mfg = new MyFirstGet(args[0]);
-*/	
 		String content = GetPostUtils.getContentAsText("http://175.41.130.244:80/");
 		System.out.println(content);
 		System.out.println("Content length:"+content.length());
