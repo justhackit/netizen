@@ -28,7 +28,6 @@ public class GetPostUtils {
 			LOG.error("Error occured in communication.");
 		}
 		return resp;
-
 	}
 	
 	/*

@@ -117,9 +117,6 @@ public class BasicNetizenDTO {
 			}
 		}
 		theString.append("Response Status Line:" + this.respStatusLine + "\n");
-		if(!this.contentWeight.contains("-")){
-			theString.append("Content Length:" + this.contentWeight + "\n");
-		}
 		if (this.responseHeaders.length > 0) {
 			theString.append("Response Headers:\n");
 			for (Header header : this.responseHeaders) {
