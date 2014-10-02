@@ -1,0 +1,189 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	eSeva - Availability Chart
+</title><link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+    .ts{
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        background-color:#fff;
+        color: black;
+        text-decoration: none; 
+    }
+    .dh
+    {
+        background-color: silver;
+        color: #000;
+    }
+    .od {
+        background-color: #fff;
+        color: #fff;
+    }    
+    .w {
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size: 9px;
+        font-weight: normal;
+        background-color:#fff;
+        color: black;
+        text-decoration: none;           
+    }
+    .g {
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size: 9px;
+        font-weight: bold;
+        background-color:green;
+        color: #fff;
+        text-decoration: none;        
+    }
+    .b {
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size: 9px;
+        font-weight: bold;
+        background-color:blue;
+        color: #fff;
+        text-decoration: none;        
+    }
+    .r {
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        font-size: 9px;
+        font-weight: bold;
+        background-color:red;
+        color: #fff;
+        text-decoration: none;        
+    }
+    </style>
+    <script language=javascript>
+        self.focus();
+    </script>
+</head>
+<body>
+    <form name="form1" method="post" action="AvailabilityChart.aspx" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1ODQ5NjAxNjIPZBYCAgMPZBYEAgMPEA8WBh4NRGF0YVRleHRGaWVsZAUJU2V2YV9OYW1lHg5EYXRhVmFsdWVGaWVsZAUHU2V2YV9JZB4LXyFEYXRhQm91bmRnZBAVCAdBcmNoYW5hHEFzdGFkYWxhIFBhZGEgUGFkbWFyYWRoYW5hbXUNS2FseWFub3RzYXZhbRJOaWphcGFkYSBEYXJzaGFuYW0LU3VwcmFiaGF0YW0MVGhvbWFsYSBTZXZhDlZhc2FudGhvdHNhdmFtDVZpc2VzaGEgUG9vamEVCAE2ATgCMTIBNAEzATUCMTMBNxQrAwhnZ2dnZ2dnZ2RkAgUPEA8WBh8ABQR0ZXh0HwEFBXZhbHVlHwJnZBAVBgxPY3RvYmVyLTIwMTQNTm92ZW1iZXItMjAxNA1EZWNlbWJlci0yMDE0DEphbnVhcnktMjAxNQ1GZWJydWFyeS0yMDE1Ck1hcmNoLTIwMTUVBgoxMC8wMS8yMDE0CjExLzAxLzIwMTQKMTIvMDEvMjAxNAowMS8wMS8yMDE1CjAyLzAxLzIwMTUKMDMvMDEvMjAxNRQrAwZnZ2dnZ2dkZGTqdn2E5s4ZqDCP6LihQZXjeOOgPQ==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWOwLX+ZSvBgLB0o2pAQLLvafHDQLZvafHDQLOve/EDQLNvafHDQLMvafHDQLKvafHDQLOvdPEDQLIvafHDQLRrbqRAQLGnaqvDgLGna7NDwLGnYLsDwKFiqrNDwKFiobsDwKFioKKDwL93st+Av3ep5oIAv3ek7UBAv3ej9AKAv3eu7kPAv3el1QC2Pe5/QMC2PeVmAsC2PeBswwC2Pf97gUC2PfpiQ0C2PfFpAYC2PexwA8C2PetewLY99nDBQLY97X/DgKVlPSICwKVlOCjDAKVlNzeBQKVlMj5DgKVlKSVBgKVlJCwDwKVlIxrApWU+IYIApWUlO8OApWUgIoGAvCtkpMBAvCtjs4KAvCt+ukDAvCt1oQLAvCtwr8MAvCtvtsFAvCtqvYOAvCthpEGAvCtsvoEAvCtrpUMAuu6sL4PAuu6rFkC67qY9AkC67r0rwEC67rgygoC67rc5QPjK1QrC7Dpa5vQMC2oQGENVgEe+w==" />
+</div>
+    <br />
+    <table class="txt" cellSpacing="0" cellPadding="0" width="94%" align="center" border="0">
+				<tr>
+					<td class="hdtxt2">Availability Chart
+					</td>
+				</tr>
+				<tr>
+				    <td height="1" align="left" background="../images/line.gif"><img src="../images/spacer.gif" width="3" height="1"></td>					
+				</tr>
+				<tr>
+					<td align="center" class="txt_blk">
+                        <br />
+                        Please select the Seva and Month to check the availability</td>
+				</tr>
+				<tr>
+					<td align="center" class="txt_blk">
+                        <br />
+                        &nbsp;<span id="lbl_Error_Msg" class="txtError"></span></td>
+				</tr>
+				<tr>
+					<td align="left" class="txt_blk">&nbsp;Seva :&nbsp;<select name="cmbSeva" onchange="javascript:setTimeout('__doPostBack(\'cmbSeva\',\'\')', 0)" id="cmbSeva" class="txt_blk" style="width:200px;">
+	<option value="6">Archana</option>
+	<option value="8">Astadala Pada Padmaradhanamu</option>
+	<option selected="selected" value="12">Kalyanotsavam</option>
+	<option value="4">Nijapada Darshanam</option>
+	<option value="3">Suprabhatam</option>
+	<option value="5">Thomala Seva</option>
+	<option value="13">Vasanthotsavam</option>
+	<option value="7">Visesha Pooja</option>
+
+</select>
+	                    &nbsp;
+	                    <select name="cmbDate" onchange="javascript:setTimeout('__doPostBack(\'cmbDate\',\'\')', 0)" id="cmbDate" class="txt_blk">
+	<option selected="selected" value="10/01/2014">October-2014</option>
+	<option value="11/01/2014">November-2014</option>
+	<option value="12/01/2014">December-2014</option>
+	<option value="01/01/2015">January-2015</option>
+	<option value="02/01/2015">February-2015</option>
+	<option value="03/01/2015">March-2015</option>
+
+</select>
+					</td>
+					
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td align="left">
+					
+                        <table id="Calendar1" cellspacing="0" cellpadding="2" rules="all" title="Calendar" border="1" style="border-width:1px;border-style:solid;height:166px;width:425px;border-collapse:collapse;">
+	<tr><td colspan="7" style="background-color:Transparent;"><table class="ts" cellspacing="0" border="0" style="width:100%;border-collapse:collapse;">
+		<tr><td align="center" style="width:70%;">October 2014</td></tr>
+	</table></td></tr><tr><th class="dh" align="center" abbr="Sunday" scope="col">Sun</th><th class="dh" align="center" abbr="Monday" scope="col">Mon</th><th class="dh" align="center" abbr="Tuesday" scope="col">Tue</th><th class="dh" align="center" abbr="Wednesday" scope="col">Wed</th><th class="dh" align="center" abbr="Thursday" scope="col">Thu</th><th class="dh" align="center" abbr="Friday" scope="col">Fri</th><th class="dh" align="center" abbr="Saturday" scope="col">Sat</th></tr><tr><td class="od" align="center" style="width:14%;">&nbsp;</td><td class="od" align="center" style="width:14%;">&nbsp;</td><td class="od" align="center" style="width:14%;">&nbsp;</td><td class="b" align="center" style="width:14%;">1</td><td class="b" align="center" style="width:14%;">2</td><td class="b" align="center" style="width:14%;">3</td><td class="b" align="center" style="width:14%;">4</td></tr><tr><td class="r" align="center" style="width:14%;">5</td><td class="r" align="center" style="width:14%;">6</td><td class="r" align="center" style="width:14%;">7</td><td class="b" align="center" style="width:14%;">8</td><td class="r" align="center" style="width:14%;">9</td><td class="r" align="center" style="width:14%;">10</td><td class="r" align="center" style="width:14%;">11</td></tr><tr><td class="r" align="center" style="width:14%;">12</td><td class="r" align="center" style="width:14%;">13</td><td class="r" align="center" style="width:14%;">14</td><td class="r" align="center" style="width:14%;">15</td><td class="r" align="center" style="width:14%;">16</td><td class="r" align="center" style="width:14%;">17</td><td class="r" align="center" style="width:14%;">18</td></tr><tr><td class="r" align="center" style="width:14%;">19</td><td class="r" align="center" style="width:14%;">20</td><td class="r" align="center" style="width:14%;">21</td><td class="r" align="center" style="width:14%;">22</td><td class="b" align="center" style="width:14%;">23</td><td class="r" align="center" style="width:14%;">24</td><td class="r" align="center" style="width:14%;">25</td></tr><tr><td class="r" align="center" style="width:14%;">26</td><td class="r" align="center" style="width:14%;">27</td><td class="r" align="center" style="width:14%;">28</td><td class="r" align="center" style="width:14%;">29</td><td class="r" align="center" style="width:14%;">30</td><td class="b" align="center" style="width:14%;">31</td><td class="od" align="center" style="width:14%;">&nbsp;</td></tr><tr><td class="od" align="center" style="width:14%;">&nbsp;</td><td class="od" align="center" style="width:14%;">&nbsp;</td><td class="od" align="center" style="width:14%;">&nbsp;</td><td class="od" align="center" style="width:14%;">&nbsp;</td><td class="od" align="center" style="width:14%;">&nbsp;</td><td class="od" align="center" style="width:14%;">&nbsp;</td><td class="od" align="center" style="width:14%;">&nbsp;</td></tr>
+</table>
+                        </td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>
+						<table class="txt" cellSpacing="4" cellPadding="1" width="80%" align="center" border="0">
+							<tr>
+								<td width="17" bgColor="green" height="5">&nbsp;</td>
+								<td class="txt_blk">Available</td>
+								<td width="17" bgColor="red" height="5">&nbsp;</td>
+								<td class="txt_blk">Quota Full</td>
+							</tr>
+							<tr>
+								<td width="17" bgColor="blue" height="5">&nbsp;</td>
+								<td class="txt_blk">Quota Not Released</td>
+								<td background="../images/border.JPG">&nbsp;</td>
+								<td class="txt_blk">
+                                    Seva Not Performed</td>
+							</tr>
+						</table>	
+						<br />
+					</td>
+				</tr>
+				<tr>
+					<td align="center" class="con_txt"><center><font color=Red>
+						Note: Pilgrim can book minimum of 1 day in advance and maximum of 60 days.</font></center></td>
+				</tr>
+				<tr>
+					<td align="center">&nbsp;
+						</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<A class="txt_blk" href="javascript:window.close();"><u>Close Window</u></A>
+					</td>
+				</tr>
+			</table>
+    </form>
+</body>
+</html>
