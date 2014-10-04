@@ -18,7 +18,7 @@ import org.apache.log4j.Logger;
 import org.codemahal.dto.BasicNetizenDTO;
 //import org.codemahal.netizen.churner.jsoupimpl.ChurnItByJsoup;
 import org.codemahal.netizen.common.GetPostUtils;
-import org.codemahal.netizen.common.ReadUtils;
+import org.codemahal.netizen.common.CommonUtils;
 
 public class Page_1 {
 	static Logger LOG = Logger.getLogger(Page_1.class);
@@ -36,8 +36,8 @@ public class Page_1 {
 		HttpEntity entity = resp.getEntity();
 		dto.setStatusCode(resp.getStatusLine().getStatusCode());
 		dto.setRespStatusLine(resp.getStatusLine().toString());
-		dto.setContentWeight(ReadUtils.bytesToHigher(entity.getContentLength()));
+		dto.setContentWeight(CommonUtils.bytesToHigher(entity.getContentLength()));
 		dto.setResponseHeaders(resp.getAllHeaders());
-		dto.setTheContent(ReadUtils.getContentAsText(entity.getContent()));
+		dto.setTheContent(CommonUtils.getContentAsText(entity.getContent()));
 	}
 }

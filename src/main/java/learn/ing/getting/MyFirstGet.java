@@ -12,7 +12,7 @@ import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.codemahal.netizen.common.GetPostUtils;
-import org.codemahal.netizen.common.ReadUtils;
+import org.codemahal.netizen.common.CommonUtils;
 
 public class MyFirstGet {
 	static Logger LOG = Logger.getLogger(MyFirstGet.class);
@@ -24,7 +24,7 @@ public class MyFirstGet {
 		long startedAt = System.currentTimeMillis();
 		HttpResponse resp = GetPostUtils.getPage(target);
 		LOG.info("Time Taken: "+(System.currentTimeMillis() - startedAt));
-		String content = ReadUtils.getContentAsText(resp.getEntity().getContent());
+		String content = CommonUtils.getContentAsText(resp.getEntity().getContent());
 		
 	}
 	

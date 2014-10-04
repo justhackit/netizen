@@ -6,7 +6,7 @@ import org.apache.http.Header;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.HttpRequestBase;
-import org.codemahal.netizen.common.ReadUtils;
+import org.codemahal.netizen.common.CommonUtils;
 import org.jsoup.Jsoup;
 /*
  * The basic DTO that holds some info 
@@ -123,7 +123,7 @@ public class BasicNetizenDTO {
 				theString.append("\t"+header.getName() + "->" + header.getValue()+"\n");
 			}
 		}
-		theString.append("The Content (of weight# "+ReadUtils.bytesToHigher(theContent.length())+"):\n");
+		theString.append("The Content (of weight# "+CommonUtils.bytesToHigher(theContent.length())+"):\n");
 		theString.append("Page Title: "+Jsoup.parse(this.theContent.toString()).title()+"\n");
 		theString.append(this.theContent.substring(0, 100)
 				+ "\n.......\n"

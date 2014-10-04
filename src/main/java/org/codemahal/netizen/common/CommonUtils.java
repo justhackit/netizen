@@ -9,8 +9,8 @@ import java.io.InputStreamReader;
 
 import org.apache.log4j.Logger;
 
-public class ReadUtils {
-	static Logger LOG = Logger.getLogger(ReadUtils.class);
+public class CommonUtils {
+	static Logger LOG = Logger.getLogger(CommonUtils.class);
 
 	public static String getContentAsText(InputStream in) throws IOException {
 		LOG.info("Extracting the content from stream...");
